@@ -34,12 +34,7 @@ public class Record {
     }
 
     public void writeNextRow(String value) throws NotUniqueException {
-        System.out.println(this.getNextRow().equals("NICKNAME"));
-        System.out.println(DBRecords.checkLogin(value));
-
-
-        if (this.getNextRow().equals("NICKNAME") && DBRecords.checkLogin(value)){
-            System.out.println("NEEEENENNNENENEEN");
+        if (this.getNextRow().name().equals("NICKNAME") && DBRecords.checkLogin(value)){
             throw new NotUniqueException();
         } else{
             rows.get(++rowIndex).setValue(value);
