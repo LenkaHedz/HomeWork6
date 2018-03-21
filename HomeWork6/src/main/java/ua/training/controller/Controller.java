@@ -28,12 +28,11 @@ public class Controller {
         while (record.hasNextEmptyRow()) {
             Row nextRow = record.getNextRow();
             String value = inputStringValueWithScanner(nextRow.getRequest(), nextRow.getRegex());
-            /*  suuudaa */
             try{
                 record.writeNextRow(value);
             }
             catch(NotUniqueException e){
-                view.printStringInput(e.getMessage());
+                view.print(e.getMessage());
             }
 
 
