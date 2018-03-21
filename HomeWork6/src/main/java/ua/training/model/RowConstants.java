@@ -8,7 +8,7 @@ public interface RowConstants {
     String NICKNAME_REGEX = "\\w{3,}";
     String PASSWORD_REGEX = "[\\w\\s.,'\"?!@#$%&;:]{5,}";
     String COMMENTS_REGEX = "[\\w\\s.,'\"?!@#$%&;:]{1,100}";
-    String GROUP_REGEX = "customer|admin";
+    String GROUP_REGEX = "user|admin";
     String HOME_PHONE_REGEX = "\\d{3}-\\d{3}-\\d\\d-\\d\\d";
     String PRIMARY_MOBILE_REGEX = "\\d{3}-\\d{3}-\\d\\d-\\d\\d";
     String SECONARY_MOBILE_REGEX = "(\\d{3}-\\d{3}-\\d\\d-\\d\\d)|(-)";
@@ -26,7 +26,7 @@ public interface RowConstants {
     String NICKNAME_REQUEST = "nick name (no less than 3 characters)";
     String PASSWORD_REQUEST = "password (no less than 5 simbols)";
     String COMMENTS_REQUEST = "comments (up to 100 symbols)";
-    String GROUP_REQUEST = "group (types 'customer' ore 'admin' are available";
+    String GROUP_REQUEST = "group (types 'user' ore 'admin' are available";
     String HOME_PHONE_REQUEST = "home phone number (in format: XXX-XXX-XX-XX)";
     String PRIMARY_MOBILE_REQUEST = "primary mobile phone number (in format: XXX-XXX-XX-XX)";
     String SECONARY_MOBILE_REQUEST = "secondary mobile phone number if not exists - type '-' (number in format: XXX-XXX-XX-XX)";
